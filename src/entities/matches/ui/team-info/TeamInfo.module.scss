@@ -1,0 +1,19 @@
+.root{
+  @apply w-full;
+  .players{
+    @apply grid grid-cols-3 gap-g8 mb-2;
+  }
+  .generalInformationContainer{
+    @apply flex flex-row justify-between p-cardInfo bg-blackInfo rounded-r4;
+    .textContainer{
+      @apply flex flex-row items-center gap-g8;
+      .text{
+        @apply text-gray text-f14 font-medium;
+      }
+      .textInfo{
+        @apply text-whiteAlt text-f16 font-semibold;
+      }
+    }
+  }
+
+}

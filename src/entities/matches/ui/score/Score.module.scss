@@ -1,0 +1,6 @@
+.root{
+  @apply flex flex-col items-center gap-g4;
+  .text{
+    @apply text-white text-f20 font-semibold leading-6;
+  }
+}

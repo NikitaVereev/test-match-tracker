@@ -1,0 +1,6 @@
+.root{
+  @apply flex flex-col p-layout gap-g20;
+  .matchesContainer{
+    @apply flex flex-col gap-g12;
+  }
+}

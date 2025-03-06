@@ -1,0 +1,6 @@
+.root{
+  @apply p-cardInfo bg-blackAlt1 rounded-r4 flex flex-row items-center gap-g10;
+  .text{
+    @apply text-white text-f18;
+  }
+}

@@ -1,0 +1,12 @@
+.root{
+  @apply flex flex-row justify-between items-center;
+  .logo{
+    @apply flex items-center justify-center;
+    .text{
+      @apply text-white font-tactic text-f32;
+    }
+  }
+  .content{
+    @apply flex flex-row items-center gap-g12;
+  }
+}

@@ -1,0 +1,15 @@
+.root{
+  @apply w-fit;
+  &.live{
+    @apply p-statusLive bg-green rounded-r4;
+  }
+  &.finished{
+    @apply p-statusFinished bg-red rounded-r4;
+  }
+  &.preparing{
+    @apply p-statusPreparing bg-orange rounded-r4;
+  }
+  .text{
+    @apply text-white text-f12 font-semibold leading-[15px];
+  }
+}

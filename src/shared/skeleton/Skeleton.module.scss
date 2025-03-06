@@ -1,0 +1,10 @@
+.skeleton {
+  @apply inline-block;
+  background: linear-gradient(-60deg, #0A0E12 33%,#0F1318, #0A0E12 66%) right/300% 100%;
+  animation: move 1s linear infinite;
+  border-radius: 4px;
+}
+
+@keyframes move {
+  to {background-position: left}
+}

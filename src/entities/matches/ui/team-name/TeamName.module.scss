@@ -1,0 +1,18 @@
+.root{
+  @apply flex gap-g14 items-center;
+  &.left{
+    @apply flex-row;
+  }
+  &.right{
+    @apply flex-row-reverse;
+  }
+  .text{
+    @apply text-white text-f16 font-semibold;
+  }
+  .imgContainer{
+    @apply w-12 h-12 flex items-center justify-center;
+    img{
+      @apply object-contain;
+    }
+  }
+}

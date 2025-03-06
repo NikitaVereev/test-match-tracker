@@ -1,0 +1,7 @@
+
+.root {
+  @apply bg-red active:bg-redActive transition-colors flex flex-row items-center gap-g10 p-button rounded-r4;
+  .text{
+    @apply text-white text-f18;
+  }
+}

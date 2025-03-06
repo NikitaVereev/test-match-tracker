@@ -1,0 +1,29 @@
+.root{
+  @apply bg-blackCard rounded-r4 p-matchCard flex flex-col;
+  .dropList{
+    @apply flex flex-row items-center justify-between gap-g12;
+    .container{
+      @apply  flex flex-row justify-between flex-1;
+    }
+    .dropListDown{
+      @apply w-7 h-7 flex items-center justify-center transition-transform duration-300 ease-in-out cursor-pointer;
+      &.dropOpen{
+        @apply rotate-180;
+      }
+    }
+  }
+  .dropListItem{
+    @apply overflow-hidden max-h-0 origin-top opacity-0;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+    &.open{
+      @apply max-h-[300px] opacity-100 scale-y-100;
+    }
+    .infoContainer{
+      @apply flex mt-8 flex-row gap-g32 p-cardInfoContainer;
+      .item{
+        @apply flex flex-1
+      }
+    }
+  }
+}
+

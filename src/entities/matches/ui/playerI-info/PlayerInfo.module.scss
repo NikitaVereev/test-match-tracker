@@ -1,0 +1,21 @@
+.root{
+  @apply p-cardInfo bg-blackInfo rounded-r4 flex flex-row items-center justify-between;
+  .player{
+    @apply flex flex-row items-center gap-g8;
+    .imgContainer{
+      @apply w-9 h-9 flex items-center justify-center;
+      img{
+        @apply object-contain;
+      }
+    }
+  }
+  .textContainer{
+    @apply flex flex-row items-center gap-g8;
+    .text{
+      @apply text-gray text-f14 font-medium;
+    }
+  }
+  .textInfo{
+    @apply text-whiteAlt text-f16 font-semibold;
+  }
+}
