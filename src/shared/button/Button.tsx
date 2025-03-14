@@ -2,7 +2,6 @@ import styles from './Button.module.scss'
 import { ButtonHTMLAttributes } from 'react'
 import { Icons } from '../../assets/icons/icon.tsx'
 import { EIcon } from '../../assets/icons/iconConstants.ts'
-import clsx from "clsx";
 
 export const Button = ({
 	text,
