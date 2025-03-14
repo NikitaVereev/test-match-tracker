@@ -5,10 +5,11 @@ import { useQueryClient } from '@tanstack/react-query'
 import { MATCHES_QUERY } from '../../entities/api/query.cons.ts'
 
 interface IMatchesHeaderProps {
-	isError?: boolean
+	isError?: boolean,
+	isLoading?: boolean
 }
 
-export const MatchesHeader: React.FC<IMatchesHeaderProps> = ({ isError }) => {
+export const MatchesHeader: React.FC<IMatchesHeaderProps> = ({ isError, isLoading }) => {
 	const queryClient = useQueryClient()
 	const refetchMatches = () => queryClient.invalidateQueries({ queryKey: [MATCHES_QUERY] })
 
@@ -19,7 +20,7 @@ export const MatchesHeader: React.FC<IMatchesHeaderProps> = ({ isError }) => {
 			</div>
 			<div className={styles.content}>
 				{isError && <Toast text={'Ошибка: не удалось загрузить информацию'} />}
-				<Button text={'Обновить'} onClick={refetchMatches} />
+				<Button disabled={isLoading} text={'Обновить'} onClick={refetchMatches} />
 			</div>
 		</div>
 	)

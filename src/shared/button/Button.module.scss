@@ -1,6 +1,9 @@
 
 .root {
-  @apply bg-red active:bg-redActive transition-colors flex flex-row items-center gap-g10 p-button rounded-r4;
+  @apply bg-red active:bg-redActive cursor-pointer transition-colors flex flex-row items-center gap-g10 p-button rounded-r4;
+  &:disabled{
+    @apply bg-redDisabled cursor-auto;
+  }
   .text{
     @apply text-white text-f18;
   }

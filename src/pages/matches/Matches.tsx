@@ -10,7 +10,7 @@ export const Matches = () => {
 
 	return (
 		<div className={styles.root}>
-			<MatchesHeader isError={isError} />
+			<MatchesHeader isLoading={isLoading || isFetching} isError={isError} />
 			<div className={styles.matchesContainer}>
 				{isLoading || isFetching
 					? new Array(numberOfSkeletons)
